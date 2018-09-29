@@ -10,6 +10,6 @@ Some guidelines I'll follow:
 
 - If it's too large for a canvas backdrop, an original photo will not be taken.
   - E.g. furniture, bed frames, mattresses, and so on.
-- If it's a consumable or something that's regularly replaced, it'll be excluded, unless it's in a container (cleaning fluid, e.g.)
+- If it's a consumable or something that's regularly replaced, it'll be excluded, unless it's in a container (cleaning fluid, alcohol)
 - Intimate items will be excluded
 - Everything else is fair game
