@@ -1,7 +1,0 @@
-@import 'layout';
-
-header {
-    @include mobile {
-        @include flex($flow: row nowrap);
-    }
-}

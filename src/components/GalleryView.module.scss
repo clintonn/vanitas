@@ -1,8 +1,9 @@
 @import 'variables';
 @import 'layout';
 
-.Gallery {
-    @include flex();
+.gallery {
+    color: red;
+    @include flex($justify: space-between);
     width: 100%;
     padding: 1rem;
 }

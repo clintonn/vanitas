@@ -8,6 +8,7 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
+    "@types/uuid": "^3.4.4",
     "babel-jest": "^23.6.0",
     "gatsby": "^2.0.0",
     "gatsby-plugin-react-helmet": "^3.0.1",
@@ -17,7 +18,8 @@
     "prop-types": "^15.6.2",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",

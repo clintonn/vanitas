@@ -1,0 +1,10 @@
+@import 'variables';
+@import 'layout';
+
+.ImagePanel {
+    @include flex($flow: column nowrap);
+}
+
+.Figure {
+    margin: 0;
+}
