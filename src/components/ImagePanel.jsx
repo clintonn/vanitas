@@ -11,8 +11,7 @@ export default function ImagePanel({
       <Link to="/about">
         <figure className={style.Figure}>
           <img src="http://placekitten.com/220/340" alt={product} />
-          <figcaption>{name}</figcaption>
-          HECK
+          <figcaption>heck</figcaption>
         </figure>
       </Link>
     </div>

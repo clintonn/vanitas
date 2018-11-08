@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import galleryStyle from './GalleryView.module.scss';
+import style from './GalleryView.module.scss';
 import ImagePanel from './ImagePanel';
 
 export default class GalleryView extends Component {
   render() {
     return (
-      <section className={galleryStyle.gallery}>
+      <section className={style.Gallery}>
         <ImagePanel />
         <ImagePanel />
         <ImagePanel />

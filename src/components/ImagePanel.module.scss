@@ -5,8 +5,16 @@
     @include flex($flow: column nowrap, $inline: true);
     margin: 0 auto;
     padding: .25rem;
+    flex: 1;
+    @include mobile {
+        flex: 100%;
+    }
 }
 
 .Figure {
     margin: 0;
+    text-align: center;
+    figcaption {
+        text-align: left;
+    }
 }
