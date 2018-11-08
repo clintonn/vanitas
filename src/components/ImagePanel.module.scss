@@ -2,7 +2,9 @@
 @import 'layout';
 
 .ImagePanel {
-    @include flex($flow: column nowrap);
+    @include flex($flow: column nowrap, $inline: true);
+    margin: 0 auto;
+    padding: .25rem;
 }
 
 .Figure {

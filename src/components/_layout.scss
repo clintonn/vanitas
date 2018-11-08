@@ -10,8 +10,8 @@
     }
 }
 
-@mixin flex($flow: row wrap, $justify: flex-start, $align: flex-start) {
-    display: flex;
+@mixin flex($flow: row wrap, $justify: flex-start, $align: flex-start, $inline: false) {
+    display: if($inline, inline-flex, flex);
     flex-flow: $flow;
     justify-content: $justify;
     align-content: $align;
