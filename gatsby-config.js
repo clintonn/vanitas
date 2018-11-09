@@ -9,6 +9,7 @@ module.exports = {
     },
     'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
+    'gatsby-transformer-remark',
   ],
   siteMetadata: {
     title: 'Inventory',
