@@ -1,15 +1,23 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { Link } from 'gatsby';
+import { Link, StaticQuery, graphql } from 'gatsby';
 
-export default function Header({ title }) {
+export default function Header() {
   return (
-    <header>
-      <Link to="/">{title}</Link>
-    </header>
+    <StaticQuery
+      query={graphql`
+        {
+          site {
+            siteMetadata {
+              title
+            }
+          }
+        }
+      `}
+      render={data => (
+        <header>
+          <Link to="/">{data.site.siteMetadata.title}</Link>
+        </header>
+      )}
+    />
   );
 }
-
-Header.propTypes = {
-  title: PropTypes.string.isRequired,
-};

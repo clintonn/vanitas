@@ -3,15 +3,13 @@ import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import style from './ImagePanel.module.scss';
 
-export default function ImagePanel({
-  product, path, name, img,
-}) {
+export default function ImagePanel({ path, title, image }) {
   return (
     <div className={style.ImagePanel}>
-      <Link to="/about">
+      <Link to={path}>
         <figure className={style.Figure}>
-          <img src="http://placekitten.com/220/340" alt={product} />
-          <figcaption>heck</figcaption>
+          <img src={image} alt={title} />
+          <figcaption>{title}</figcaption>
         </figure>
       </Link>
     </div>
@@ -19,8 +17,7 @@ export default function ImagePanel({
 }
 
 ImagePanel.propTypes = {
-  product: PropTypes.string.isRequired,
   path: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  img: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
 };
