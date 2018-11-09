@@ -1,0 +1,23 @@
+@import 'variables';
+@import 'layout';
+
+.ImagePanel {
+    @include flex($inline: true);
+    margin: 0 auto;
+    padding: .25rem;
+    flex: 1;
+    & > * {
+        margin: 0 auto;
+    }
+    @include mobile {
+        flex: 100%;
+    }
+}
+
+.Figure {
+    margin: 0;
+    text-align: center;
+    figcaption {
+        text-align: left;
+    }
+}

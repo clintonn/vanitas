@@ -1,16 +1,12 @@
-import React, { Component, Fragment } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
+import ImagePanel from './ImagePanel';
 
-export default class ImageCollection extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { currentIndex: 0 };
-  }
-
-  render() {
-    return (
-      <Fragment>
-        Hello Image Collection
-      </Fragment>
-    );
-  }
+export default function ImageCollection({ images }) {
+  const imageMaps = images.map(img => <ImagePanel key={img.id} />);
+  return <>{imageMaps}</>;
 }
+
+ImageCollection.propTypes = {
+  images: PropTypes.arrayOf(PropTypes.object).isRequired,
+};

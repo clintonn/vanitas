@@ -1,0 +1,18 @@
+@mixin mobile {
+   @media screen and (max-width: 420px) {
+       @content;
+   }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin flex($flow: row wrap, $justify: flex-start, $align: flex-start, $inline: false) {
+    display: if($inline, inline-flex, flex);
+    flex-flow: $flow;
+    justify-content: $justify;
+    align-content: $align;
+}
