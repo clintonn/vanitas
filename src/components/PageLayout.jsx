@@ -4,7 +4,7 @@ import './Layout.scss';
 import Nav from './Nav';
 import Header from './Header';
 import Footer from './Footer';
-import links from '../constants/links';
+import links from '../utils/links';
 
 export default function PageLayout({ children }) {
   return (
