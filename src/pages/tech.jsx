@@ -21,11 +21,7 @@ export const query = graphql`
     ) {
       edges {
         node {
-          frontmatter {
-            title
-            path
-            image
-          }
+          ...ImagePanelData
         }
       }
     }

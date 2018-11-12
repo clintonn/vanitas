@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import style from './ImagePanel.module.scss';
 
 export default function ImagePanel({ path, title, image }) {
@@ -15,6 +15,16 @@ export default function ImagePanel({ path, title, image }) {
     </div>
   );
 }
+
+export const query = graphql`
+  fragment ImagePanelData on MarkdownRemark {
+    frontmatter {
+      title
+      image
+      path
+    }
+  }
+`;
 
 ImagePanel.propTypes = {
   path: PropTypes.string.isRequired,
